@@ -525,7 +525,7 @@ test('handlers detect stream mode via `options.isStream`', withServer, async (_t
 	assert.strictEqual(streamModeCount, 1);
 });
 
-test('hooks aren\'t overriden when merging options', withServer, async (_t, server, got) => {
+test('hooks aren\'t overridden when merging options', withServer, async (_t, server, got) => {
 	server.get('/', echoHeaders);
 
 	let isCalled = false;
