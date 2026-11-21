@@ -429,7 +429,7 @@ test('contains Got options', withServer, async (_t, server, got) => {
 	assert.strictEqual(error?.options.context.foo, options.context.foo);
 });
 
-test('empty status message is overriden by the default one', withServer, async (_t, server, got) => {
+test('empty status message is overridden by the default one', withServer, async (_t, server, got) => {
 	server.get('/', (_request, response) => {
 		response.writeHead(400, '');
 		response.end('body');

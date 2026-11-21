@@ -435,7 +435,7 @@ test('`content-length` header with Stream body', withServer, async (_t, server, 
 	assert.strictEqual(headers['content-length'], undefined);
 });
 
-test('`content-length` header is not overriden', withServer, async (_t, server, got) => {
+test('`content-length` header is not overridden', withServer, async (_t, server, got) => {
 	server.post('/', echoHeaders);
 
 	const {body} = await got.post({
@@ -475,7 +475,7 @@ test('`content-length` header disabled for chunked transfer-encoding', withServe
 	assert.strictEqual(headers['content-length'], undefined);
 });
 
-test('`content-type` header is not overriden when object in `options.body`', withServer, async (_t, server, got) => {
+test('`content-type` header is not overridden when object in `options.body`', withServer, async (_t, server, got) => {
 	server.post('/', echoHeaders);
 
 	const {body: headers} = await got.post<Record<string, string>>({

@@ -92,7 +92,7 @@ An array of URLs of consecutive requests.
 The current retry count.
 
 **Note:**
-> - Must be overriden when retrying.
+> - Must be overridden when retrying.
 
 ### `stream.ip`
 
